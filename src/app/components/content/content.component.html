@@ -1,0 +1,9 @@
+<div class="flex gap-4 flex-wrap w-screen bg-gradient-to-r from-black to bg-neutral-900 items-center justify-center">
+  <div *ngFor="let quote of filteredQuotes | shuffleContent" class=" w-52 h-96 bg-gradient-to-l  from-teal-400 to-neutral-400 rounded-md p-4 flex flex-col justify-between items-center">
+    <p class="text-lg ">"{{ quote.quoteText }}"</p>
+    <p class="text-base font-medium"><em>{{ quote.quoteAuthor }}</em></p>
+    <button (click)="copyToClipboard(quote.quoteText)" class="bg-black rounded-lg h-fit p-3 text-white w-11/12">Copy</button>
+
+  </div>
+
+</div>
