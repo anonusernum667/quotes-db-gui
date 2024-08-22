@@ -1,6 +1,9 @@
-# Empty
+# quotes gui with quotes.json
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.6.
+
+## important 
+the app wont show any data without running json --watch for the file quotes.json 
 
 ## Development server
 
